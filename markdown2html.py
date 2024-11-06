@@ -35,7 +35,6 @@ def main():
 def md_text_2_html(index, line, lines, html_list):
     pass
     
-    
 
 def md_heading_2_html(line, html_list):
     """A function that handles conversion of markdown heading"""
@@ -61,7 +60,7 @@ def md_ul_list_2_html(index, line, lines, html_list):
         if (lines[index + 1].startswith('-')):
             html_list.append(f'<li>{line[2:-1]}</li>\n')
         else:
-            html_list.append('</ul>')
+            html_list.append('</ul>\n')
     except IndexError:
         html_list.append(f'<li>{line[2:]}</li>\n')
         html_list.append('</ul>\n')
@@ -82,7 +81,7 @@ def md_ol_list_2_html(index, line, lines, html_list):
         if (lines[index + 1].startswith('*')):
             html_list.append(f'<li>{line[2:-1]}</li>\n')
         else:
-            html_list.append('</ol>')
+            html_list.append('</ol>\n')
     except IndexError:
         html_list.append(f'<li>{line[2:]}</li>\n')
         html_list.append('</ol>\n')
