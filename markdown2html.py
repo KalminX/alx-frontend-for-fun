@@ -22,9 +22,11 @@ def main():
                         md_ul_list_2_html(index, line, lines, html_list)
                     elif line.strip().startswith('*'):
                         md_ol_list_2_html(index, line, lines, html_list)
+                    elif line == '\n':
+                        html_list.append('<br/>\n')
                     else:
                         md_text_2_html(index, line, lines, html_list)
-                    
+
                 with open(sys.argv[2], 'w', encoding='utf-8') as file:
                     file.writelines(html_list)
 
@@ -32,9 +34,10 @@ def main():
             print(f'Missing {sys.argv[1]}', file=sys.stderr)
             exit(1)
 
+
 def md_text_2_html(index, line, lines, html_list):
     pass
-    
+
 
 def md_heading_2_html(line, html_list):
     """A function that handles conversion of markdown heading"""
@@ -67,6 +70,7 @@ def md_ul_list_2_html(index, line, lines, html_list):
     except:
         pass
 
+
 def md_ol_list_2_html(index, line, lines, html_list):
     """A function that handles conversion of markdown unordered list"""
     if index == 0:
@@ -87,6 +91,7 @@ def md_ol_list_2_html(index, line, lines, html_list):
         html_list.append('</ol>\n')
     except:
         pass
+
 
 if __name__ == "__main__":
     main()
