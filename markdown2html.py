@@ -65,7 +65,7 @@ def md_ul_list_2_html(index, line, lines, html_list):
         else:
             html_list.append('</ul>\n')
     except IndexError:
-        html_list.append(f'<li>{line[2:]}</li>\n')
+        html_list.append(f'<li>{line[2:-1]}</li>\n')
         html_list.append('</ul>\n')
     except:
         pass
@@ -87,7 +87,7 @@ def md_ol_list_2_html(index, line, lines, html_list):
         else:
             html_list.append('</ol>\n')
     except IndexError:
-        html_list.append(f'<li>{line[2:]}</li>\n')
+        html_list.append(f'<li>{line[2:-1]}</li>\n')
         html_list.append('</ol>\n')
     except:
         pass
