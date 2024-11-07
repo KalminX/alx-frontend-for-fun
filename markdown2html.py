@@ -22,12 +22,13 @@ def main():
                         md_ul_list_2_html(index, line, lines, html_list)
                     elif line.strip().startswith('*'):
                         md_ol_list_2_html(index, line, lines, html_list)
-                    # elif line == '\n':
-                    #     html_list.append('<br/>\n')
+                    elif line == '\n':
+                        pass
                     else:
                         md_text_2_html(index, line, lines, html_list)
 
                 with open(sys.argv[2], 'w', encoding='utf-8') as file:
+                    print(html_list)
                     file.writelines(html_list)
 
         except FileNotFoundError:
