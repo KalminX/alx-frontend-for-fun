@@ -1,10 +1,4 @@
-# title
+Hello
 
-- hello Holberton
-- Holberton School
-- Webstack
-
-## sub title
-
-- super
-- cool
+I'm a text
+with 2 lines
