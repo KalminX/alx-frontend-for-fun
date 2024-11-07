@@ -1,4 +1,20 @@
-Hello
+# Welcome to Holberton
 
-I'm a text
-with 2 lines
+Nice school!
+
+- Webstack
+- AR/VR
+- ML
+- Low level
+- and more
+
+It's a super cool project.
+Like really. no?
+
+## Tasks
+
+* read requirements
+* quiz time
+* tasks
+
+In this project you will learn how to translate a Markdown to HTML.
