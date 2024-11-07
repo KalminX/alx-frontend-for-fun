@@ -44,6 +44,8 @@ def md_text_2_html(index, line, lines, html_list):
             if (lines[index - 1] == '\n'):
                 html_list.append('<p>\n')
                 html_list.append(f'{line[:-1]}\n')
+            else:
+                html_list.append(f'{line[:-1]}\n')
         except:
             pass
     try:
@@ -51,10 +53,9 @@ def md_text_2_html(index, line, lines, html_list):
             html_list.append(f'</p>\n')
         elif lines[index + 1].strip()[0].isalpha() and lines[index] != '\n':
             html_list.append('<br/>\n')
+            
     except IndexError as e:
-        html_list.append(f'{line[:-1]}\n')
         html_list.append(f'</p>\n')
-        pass
 
 
 def md_heading_2_html(line, html_list):
