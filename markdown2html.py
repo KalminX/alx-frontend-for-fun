@@ -22,8 +22,8 @@ def main():
                         md_ul_list_2_html(index, line, lines, html_list)
                     elif line.strip().startswith('*'):
                         md_ol_list_2_html(index, line, lines, html_list)
-                    elif line == '\n':
-                        html_list.append('<br/>\n')
+                    # elif line == '\n':
+                    #     html_list.append('<br/>\n')
                     else:
                         md_text_2_html(index, line, lines, html_list)
 
