@@ -817,3 +817,14 @@ form {
 .tag-list li:last-child::after {
   content: "";
 }
+
+/* Field set
+    ============================= */
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 0;
+  padding: 0 0 2rem;
+}
