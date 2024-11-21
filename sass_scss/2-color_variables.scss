@@ -1,0 +1,17 @@
+/*More on sass variables*/
+$fg_color: #3D3D3d;
+$bg_color: #6D6D6D;
+
+body{
+	color: $fg_color;
+	background-color: $bg_color;
+}
+
+p{
+	color: $fg_color;
+}
+
+h2{
+	background-color: $bg_color;
+}
+

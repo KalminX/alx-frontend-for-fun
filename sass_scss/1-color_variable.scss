@@ -1,0 +1,10 @@
+/*Practising using sass variables*/
+$fg_color: #3D3D3D;
+
+body {
+	color: $fg_color;
+}
+
+p{
+	color: $fg_color;
+}

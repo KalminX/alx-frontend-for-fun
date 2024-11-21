@@ -1,0 +1,7 @@
+/*Playing with the for at-rule*/
+@for $i from 1 through 5
+{
+	h#{$i}{
+		font-size: #{$i}px;
+	}
+}

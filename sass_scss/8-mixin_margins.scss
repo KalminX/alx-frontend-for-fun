@@ -1,0 +1,14 @@
+/*Mixins time*/
+@mixin margin_mixin($size: 0px){
+	margin-left: $size;
+	margin-right: $size;
+}
+
+body{
+	@include margin_mixin($size: 10px);
+}
+
+div{
+	@include margin_mixin($size: 15px);
+}
+
